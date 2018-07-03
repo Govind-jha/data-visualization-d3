@@ -27,9 +27,9 @@ Now open index.html in any modern web browser.
 
 Key Features
 --------------------------------------------------------------------------
- - Scroll Up/Down to Zoom In/Out the canvas.
- - Expanding and collapsing of nodes is achieved by clicking on the desired node.
- - Dragging can be performed on any node other than root (flare).
- - Dropping can be done on any node.
- - Panning can either be done by dragging a node towards an edge.
- - Create, Update and Delete nodes.
+Scroll Up/Down to Zoom In/Out the canvas.
+Expanding and collapsing of nodes is achieved by clicking on the desired node.
+Dragging can be performed on any node other than root (flare).
+Dropping can be done on any node.
+Panning can either be done by dragging a node towards an edge.
+Create, Update and Delete nodes.

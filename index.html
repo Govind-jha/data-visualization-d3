@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="foundation.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="d3-context-menu.css" />
+<script src = "https://d3js.org/d3-collection.v1.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/smoothscroll.js"></script> 
+<style>
+
+.board {
+  z-index: 2;
+  color:red;
+
+}
+
+</style>
+
+</head>
+<body>
+    <article class="persist-area">
+        <h1 class="persist-header">
+        <!-- stuff and stuff -->
+     </article>
+
+        <div id="RenameNodeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h2 id="modalTitle">Rename Node</h2>
+          <form id="RenameNodeForm">
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Node name
+                  <input type="text" class="inputName" id='RenameNodeName' placeholder="node name" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-8 columns">
+                &nbsp;
+              </div>
+              <div class="large-4 columns">
+                <a href="#" class="button info" onclick="close_rename_node_modal()">Cancel</a>
+                <a href="#" class="button success" onclick="rename_node()">Rename</a>
+              </div>
+            </div>
+          </form>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+        <div id="CreateNodeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h2 id="modalTitle">Create Node</h2>
+          <form id="CreateNodeForm">
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Node name
+                  <input type="text" class="inputName" id='CreateNodeName' placeholder="node name" />
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-8 columns">
+                &nbsp;
+              </div>
+              <div class="large-4 columns">
+                <a href="#" class="button info" onclick="close_create_node_modal()">Cancel</a>
+                <a href="#" class="button success" onclick="create_node()">Create</a>
+              </div>
+            </div>
+          </form>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+        <div id="tree-container" class="smoothScroll"></div>
+
+        <script src="d3.v3.min.js"></script>
+        <script src="dndTree.js"></script>
+        <script src="d3-context-menu.js"></script>
+        <script src="underscore-min.js"></script>
+        <!-- <script src="jquery.js"></script> -->
+        <script src="fastclick.js"></script>
+        <script src="foundation.min.js"></script>
+        <script>
+                // for the first initialization
+                $('document').ready(function(){
+                    $(document).foundation();
+                    $(document).on('opened', '[data-reveal]', function () {
+                        var element = $(".inputName:visible").first();
+                        element.focus(function(){
+                            this.selectionStart = this.selectionEnd = this.value.length;
+                        });
+                        element.focus();
+                    });
+                    $('#RenameNodeForm').submit(function(e){
+                            rename_node();
+                            return false;
+                    });
+                    $('#CreateNodeForm').submit(function(e){
+                            create_node();
+                            return false;
+                    });
+                    var treeJSON = d3.json("coffee.json", draw_tree);
+                });
+        </script>
+</body>
+</html>
+
