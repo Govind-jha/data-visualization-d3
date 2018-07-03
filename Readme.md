@@ -4,7 +4,7 @@ Collapsible Tree Data Visualization of Coffee Flavour Wheel using D3.js
 
 Overview
 --------------------------------------------------------------------------
-A Data Visualization model of Coffee Flavour wheel using trees in D3.js. It has an editor version in which it adds a context menu for renaming, deleting and creating nodes. Right-click on a node to get the context menu for rename, delete and create. The tree auto-calculates its sizes both horizontally and vertically so it can adapt between many nodes being present in the view.
+A Data Visualization model of a Hierarchical Data Structure using trees in D3.js. It has an editor version in which it adds a context menu for renaming, deleting and creating nodes. Right-click on a node to get the context menu for rename, delete and create. The tree auto-calculates its sizes both horizontally and vertically so it can adapt between many nodes being present in the view.
 
 Data Background
 --------------------------------------------------------------------------
