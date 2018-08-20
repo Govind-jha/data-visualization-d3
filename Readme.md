@@ -1,17 +1,38 @@
 
-Collapsible Tree Data Visualization of Coffee Flavour Wheel using D3.js
+Interactive Visualization of Coffee Flavors using D3.js
 ==========================================================================
 
-Overview
---------------------------------------------------------------------------
-A Data Visualization model of a Hierarchical Data Structure using trees in D3.js. It has an editor version in which it adds a context menu for renaming, deleting and creating nodes. Right-click on a node to get the context menu for rename, delete and create. The tree auto-calculates its sizes both horizontally and vertically so it can adapt between many nodes being present in the view.
+- [Key Features](/#Key-Features)
+- [Prerequisites](/#Prerequisites)
+- [Getting  Started](/#Getting-Started) 
+- [Background](/#Data-Background)
 
-Data Background
+Key Features
 --------------------------------------------------------------------------
-Coffee Taster’s Flavor Wheel is one of the most iconic resources in the coffee industry. It's a product of dozens of professional sensory panelists, scientists, coffee buyers, and roasting companies collaborating via World Coffee Research (WCR) and the Specialty Coffee Association of America (SCAA). This is the largest and most collaborative piece of research on coffee flavor ever completed, inspiring a new set of vocabulary for industry professionals.
+ - _Scroll Up/Down to Zoom In/Out the canvas._
+ - _Expanding and collapsing of nodes is achieved by clicking on the desired node._
+ - _Dragging can be performed on any node other than root (coffee flavour Tree)._
+ - _Dropping can be done on any node._
+ - _Panning can be done by dragging a node towards an edge._
+ - _Create, Update and Delete nodes._
 
-Setup a Simple HTTP Server / Local Web Server
+
+### Prerequisites ###
+* Any Web Browser (supports javascript)
+* HTTP Server
+
+Getting Started 
 --------------------------------------------------------------------------
+You will need to publish the files on any http server, and then open the webpage in a web browser.
+
+#### Using python
+- Navigate to the project folder, and start a simple http server with this [command](https://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/):
+
+```  
+ python -m SimpleHTTPServer [port-number]
+```
+
+#### Using node
 
  - Navigate to the project folder, and start a node http server with this command:
 ```
@@ -25,11 +46,13 @@ Setup a Simple HTTP Server / Local Web Server
 
 Now open index.html in any modern web browser.
 
-Key Features
+Background
 --------------------------------------------------------------------------
- - Scroll Up/Down to Zoom In/Out the canvas.
- - Expanding and collapsing of nodes is achieved by clicking on the desired node.
- - Dragging can be performed on any node other than root (coffee flavour Tree).
- - Dropping can be done on any node.
- - Panning can be done by dragging a node towards an edge.
- - Create, Update and Delete nodes.
+Coffee Taster’s Flavor Wheel is one of the most iconic resources in the coffee industry. It's a product of dozens of professional sensory panelists, scientists, coffee buyers, and roasting companies collaborating via World Coffee Research (WCR) and the Specialty Coffee Association of America (SCAA). This is the largest and most collaborative piece of research on coffee flavor ever completed, inspiring a new set of vocabulary for industry professionals.
+&nbsp;
+#### Motive ####
+
+- To create a Data Visualization model of a Hierarchical Data Structure using trees in D3.js. 
+- Provide an editor interface to the users for renaming, deleting and creating nodes. 
+- Allow CRUD (Create, Read, Update, Delete) operations in the UI.
+) 
