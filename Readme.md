@@ -2,10 +2,10 @@
 Interactive Visualization of Coffee Flavors using D3.js
 ==========================================================================
 
-- [Key Features](/#Key-Features)
-- [Prerequisites](/#Prerequisites)
-- [Getting  Started](/#Getting-Started) 
-- [Background](/#Data-Background)
+- [Key Features](https://github.com/Govind-jha/data-visualization-d3/blob/master/Readme.md#key-features)
+- [Prerequisites](https://github.com/Govind-jha/data-visualization-d3/blob/master/Readme.md#prerequisites)
+- [Getting  Started](https://github.com/Govind-jha/data-visualization-d3/blob/master/Readme.md#getting-started) 
+- [Background](https://github.com/Govind-jha/data-visualization-d3/blob/master/Readme.md#background)
 
 Key Features
 --------------------------------------------------------------------------
@@ -17,7 +17,9 @@ Key Features
  - _Create, Update and Delete nodes._
 
 
-### Prerequisites ###
+Prerequisites
+--------------------------------------------------------------------------
+
 * Any Web Browser (supports javascript)
 * HTTP Server
 
